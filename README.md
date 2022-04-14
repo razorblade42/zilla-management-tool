@@ -7,9 +7,6 @@
 2- run "npm install"
 3- run "npm start"
 
-after these steps it will start running on a local server
-npm start
-
 Note - Although i have added all dependencies but in case if any error occurs regarding missing dependencies you can just use command
 
 "npm install @package-name --save"
