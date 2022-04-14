@@ -1,4 +1,4 @@
-# PlanRush - The Planning Tool
+# ZILLA Management Tool
 
 # Steps to install locally
 
@@ -17,11 +17,9 @@ Note - Although i have added all dependencies but in case if any error occurs re
 # Video for the app
 
 [Part-1](https://drive.google.com/file/d/192gnp9Kl8sZGVtjD7N7xur7dh-w1Rcu0/view)
-[Part-2](https://drive.google.com/file/d/1RyTqOYiV3-wMktIyl_fW57r0soAGzMNK/view)
 
 # High Level Architecture
 
-![image](https://user-images.githubusercontent.com/60290431/154328021-04a6083b-f475-4524-abd9-1db35c1e7419.png)
 [ReactAppArchitecture.pdf](https://github.com/razorblade42/react-planning-tool/files/8082364/ReactAppArchitecture.pdf)
 # Getting Started with Create React App
 
