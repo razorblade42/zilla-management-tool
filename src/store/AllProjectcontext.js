@@ -10,7 +10,7 @@ const projects = [
         notes: [
             {
                 key: "1",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "facebook",
@@ -18,7 +18,7 @@ const projects = [
             },
             {
                 key: "2",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "instagram",
@@ -26,7 +26,7 @@ const projects = [
             },
             {
                 key: "3",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -35,7 +35,7 @@ const projects = [
             },
             {
                 key: "4",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -55,7 +55,7 @@ const projects = [
         notes: [
             {
                 key: "1",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "facebook",
@@ -63,7 +63,7 @@ const projects = [
             },
             {
                 key: "2",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "instagram",
@@ -71,7 +71,7 @@ const projects = [
             },
             {
                 key: "3",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -80,7 +80,7 @@ const projects = [
             },
             {
                 key: "4",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -100,7 +100,7 @@ const projects = [
         notes: [
             {
                 key: "1",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "facebook",
@@ -108,7 +108,7 @@ const projects = [
             },
             {
                 key: "2",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "instagram",
@@ -116,7 +116,7 @@ const projects = [
             },
             {
                 key: "3",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -125,7 +125,7 @@ const projects = [
             },
             {
                 key: "4",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -144,7 +144,7 @@ const projects = [
         notes: [
             {
                 key: "1",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "facebook",
@@ -152,7 +152,7 @@ const projects = [
             },
             {
                 key: "2",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "instagram",
@@ -160,7 +160,7 @@ const projects = [
             },
             {
                 key: "3",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -169,7 +169,7 @@ const projects = [
             },
             {
                 key: "4",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -188,7 +188,7 @@ const projects = [
         notes: [
             {
                 key: "1",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "facebook",
@@ -196,7 +196,7 @@ const projects = [
             },
             {
                 key: "2",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "instagram",
@@ -204,7 +204,7 @@ const projects = [
             },
             {
                 key: "3",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
@@ -213,7 +213,7 @@ const projects = [
             },
             {
                 key: "4",
-                text: "moron comes tonight",
+                text: "He comes tonight",
                 author: "Himanshu",
                 date: "2020-01-01",
                 group: "whatsapp",
