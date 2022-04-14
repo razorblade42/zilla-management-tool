@@ -14,7 +14,7 @@ Note - Although i have added all dependencies but in case if any error occurs re
 ```
 # Video for the app
 
-[Part-1](https://drive.google.com/file/d/192gnp9Kl8sZGVtjD7N7xur7dh-w1Rcu0/view)
+[Part-1](https://drive.google.com/file/d/1Hkwhr7sucJbOmf2zkI0KDMccNACiZV9a/view?usp=sharing)
 
 # High Level Architecture
 
