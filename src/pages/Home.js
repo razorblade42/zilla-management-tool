@@ -16,7 +16,7 @@ function Home() {
         </div>
 
         <div>
-          <img className="header-image" src={sticky} />
+          <img alt="header-image" className="header-image" src={sticky} />
         </div>
       </div>
     </div>

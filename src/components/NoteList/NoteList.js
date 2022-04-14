@@ -120,10 +120,6 @@ function NoteList(props) {
         allProjectCtx.addNote(props.k, newNote);
     }
     //create a function to get a random no out of {1,2}
-    function getRandomInt() {
-        //return a coin toss
-        return Math.floor(Math.random() * 2) + 1;
-    }
 
     return (
         // length of notes
@@ -201,7 +197,7 @@ function NoteList(props) {
                                                                     {...dragProvided.draggableProps}
                                                                     ref={dragProvided.innerRef}
                                                                 >
-                                                                    <li className={note.color % 2 == 1 ? "tilt_1" : "tilt_2"} title="Double Click to Edit!">
+                                                                    <li className={note.color % 2 === 1 ? "tilt_1" : "tilt_2"} title="Double Click to Edit!">
                                                                         <NoteItem onEdit={editNote} onDelete={deleteNote} note={note} />
                                                                     </li>
                                                                 </div>
@@ -264,7 +260,7 @@ function NoteList(props) {
                                     note.text.includes(searchText) || note.author.includes(searchText) || note.group.includes(searchText) || note.date.includes(searchText)
                                 ).map((note, index) => (
                                     <D>
-                                        <li className={note.color % 2 == 1 ? "tilt_1" : "tilt_2"} title="Double Click to Edit!">
+                                        <li className={note.color % 2 === 1 ? "tilt_1" : "tilt_2"} title="Double Click to Edit!">
                                             <NoteItem onEdit={editNote} onDelete={deleteNote} note={note} />
                                         </li>
                                     </D>
