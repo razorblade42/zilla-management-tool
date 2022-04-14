@@ -1,3 +1,26 @@
+# ZILLA Management Tool
+
+# Steps to install locally!
+
+
+```
+1- clone/download this repo
+2- run "npm install"
+3- run "npm start"
+
+Note - Although i have added all dependencies but in case if any error occurs regarding missing dependencies you can just use command
+
+"npm install @package-name --save"
+```
+# Video for the app
+
+[Part-1](https://drive.google.com/file/d/192gnp9Kl8sZGVtjD7N7xur7dh-w1Rcu0/view)
+
+# High Level Architecture
+
+![image](https://user-images.githubusercontent.com/60290431/163393361-e27b5cab-582a-44fe-934e-6ddce8657a5d.jpg)
+![image](https://user-images.githubusercontent.com/60290431/163393437-f992d9ef-07d6-4e33-8a9c-215dc4d32200.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
