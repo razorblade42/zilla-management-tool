@@ -1,6 +1,7 @@
 # ZILLA Management Tool
 
-# Steps to install locally
+# Steps to install locally!
+
 
 ```
 1- clone/download this repo
@@ -17,7 +18,8 @@ Note - Although i have added all dependencies but in case if any error occurs re
 
 # High Level Architecture
 
-![image](https://user-images.githubusercontent.com/60290431/154328021-04a6083b-f475-4524-abd9-1db35c1e7419.png)
+![image](https://user-images.githubusercontent.com/60290431/163393361-e27b5cab-582a-44fe-934e-6ddce8657a5d.jpg)
+![image](https://user-images.githubusercontent.com/60290431/163393437-f992d9ef-07d6-4e33-8a9c-215dc4d32200.jpg)
 [ReactAppArchitecture.pdf](https://github.com/razorblade42/react-planning-tool/files/8082364/ReactAppArchitecture.pdf)
 # Getting Started with Create React App
 
