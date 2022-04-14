@@ -1,0 +1,131 @@
+.notes-list {
+  margin: 20px auto;
+  font-family: 'Lato';
+  background: #add8e6;
+  color: #fff;
+  padding: 20px;
+}
+
+.page-header h1 {
+  padding-left: 20px;
+  /* color: red; */
+}
+
+.notelist-header h1 b {
+  animation: color-change 5s infinite;
+
+}
+
+
+@keyframes color-change {
+  0% {
+    color: hsla(229, 83%, 60%, 1);
+
+  }
+
+  50% {
+    color: hsla(180, 57%, 53%, 1);
+  }
+
+  100% {
+    color: hsla(229, 83%, 60%, 1);
+  }
+}
+
+.notes-list * {
+  margin: 0;
+  padding: 0;
+}
+
+.notes-list ul,
+li {
+  list-style: none;
+}
+
+.note-list ul li {
+  position: absolute;
+  cursor: move;
+  user-select: none;
+  padding: 10px 10px;
+}
+
+.notes-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.notes-list ul li .notes-main {
+  text-decoration: none;
+  color: #000;
+  background: #ffc;
+  display: block;
+  height: 17em;
+  width: 17em;
+  padding: 1em;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+}
+
+.notes-list ul li {
+  margin: 1em;
+}
+
+.tilt_1 .notes-main {
+  transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background: #cfc;
+  /* border: 10px solid black; */
+}
+
+.tilt_2 .notes-main {
+  transform: rotate(-4deg);
+  position: relative;
+  top: 5px;
+  background: #cfc;
+  /* border: 10px solid red; */
+}
+
+.notes-list ul li .notes-main:hover,
+.notes-list ul li .notes-main:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+  transform: scale(1.1);
+  position: relative;
+  z-index: 5;
+  transition: all .3s ease-in-out;
+  /* cursor: pointer; */
+}
+
+.notelist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 28px;
+}
+
+.options {
+  padding-left: 10px;
+  display: flex;
+  gap: 50px;
+  /* put everything on right*/
+  justify-content: flex-end;
+}
+
+.options button {
+  background: white;
+  border: 1px solid rgb(190, 184, 184);
+  border-radius: 10px;
+  cursor: pointer;
+
+  height: 64.5px;
+  width: 64.5px;
+}
+
+.options div {
+
+  display: inline-block;
+  border-radius: 10px;
+  min-width: 110px;
+}

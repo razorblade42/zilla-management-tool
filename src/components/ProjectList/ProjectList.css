@@ -1,0 +1,10 @@
+.project-list{
+    display: block;
+    padding: 10px;
+    margin-right: 5px;
+
+}
+.project-list ul{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}

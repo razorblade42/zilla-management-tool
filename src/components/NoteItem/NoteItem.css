@@ -1,0 +1,66 @@
+.notes-main {
+  user-select: none;
+
+}
+
+.notes-main h2 {
+  font-size: 1em;
+  margin-bottom: 0.35em;
+  width: 45%;
+  height: 35px;
+}
+
+.notes-main p {
+  font-family: 'Reenie Beanie';
+  position: relative;
+  padding: 0.5em;
+  min-width: 100%;
+  min-height: 65%;
+}
+
+.notes-header,
+.notes-footer {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-header h2 {
+  color: #666;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  background-color: rgba(0, 0, 0, 0.073);
+
+}
+
+.notes-footer h2 {
+  color: #666;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  background-color: rgba(0, 0, 0, 0.073);
+
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 25%;
+}
+
+.footer-icons button {
+  background-color: transparent;
+  border: 0ch;
+
+  /*change cursor to pointer*/
+  cursor: pointer;
+}
+
+/* 
+.notes-main p h2:hover {
+  cursor: text;
+} */

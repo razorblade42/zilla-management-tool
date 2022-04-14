@@ -1,0 +1,13 @@
+.main-app {
+  margin: 10px 10px 69px 10px;
+
+  overflow: auto;
+  background-color: white;
+  min-width: 999px;
+  min-height: 100%;
+  /* background: url("https://cdn.wallpapersafari.com/62/4/YB295D.jpg") no-repeat center center fixed;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

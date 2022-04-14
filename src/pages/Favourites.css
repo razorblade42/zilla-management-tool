@@ -1,0 +1,9 @@
+.nothing {
+    /* put the text at the centre with bold */
+    position: fixed;
+    /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
