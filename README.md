@@ -20,6 +20,7 @@ Note - Although i have added all dependencies but in case if any error occurs re
 
 # High Level Architecture
 
+![image](https://user-images.githubusercontent.com/60290431/154328021-04a6083b-f475-4524-abd9-1db35c1e7419.png)
 [ReactAppArchitecture.pdf](https://github.com/razorblade42/react-planning-tool/files/8082364/ReactAppArchitecture.pdf)
 # Getting Started with Create React App
 
