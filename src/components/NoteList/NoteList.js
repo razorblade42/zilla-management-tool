@@ -152,7 +152,7 @@ function NoteList(props) {
                                         text: "",
                                         author: "",
                                         date: new Date().toISOString().slice(0, 10),
-                                        group: "",
+                                        group: "Default",
                                         // take a random number from 1 to 3
                                         color: Math.floor(Math.random() * 3) + 1,
                                     })}>
@@ -229,10 +229,11 @@ function NoteList(props) {
 
                                 AddNote({
                                     key: uuid(),
-                                    text: "",
-                                    author: "",
+                                    text: "Text",
+                                    author: "Name",
                                     date: new Date().toISOString().slice(0, 10),
-                                    group: "",
+                                    group: "Group",
+
                                     // take a random number from 1 to 3
                                     color: Math.floor(Math.random() * 3) + 1,
                                 })}>
@@ -279,10 +280,10 @@ function NoteList(props) {
 
                             AddNote({
                                 key: uuid(),
-                                text: "",
-                                author: "",
+                                text: "Text",
+                                author: "Name",
                                 date: new Date().toISOString().slice(0, 10),
-                                group: "",
+                                group: "Group",
                                 // take a random number from 1 to 3
                                 color: Math.floor(Math.random() * 3) + 1,
                             })}>
