@@ -146,7 +146,7 @@ function NoteItem(props) {
 
     return (
 
-        <div>
+        <div className="note-inside">
             {/* <Button
                 id="demo-positioned-button"
                 aria-controls={open ? 'demo-positioned-menu' : undefined}

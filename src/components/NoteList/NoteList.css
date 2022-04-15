@@ -6,6 +6,7 @@
   padding: 20px;
 }
 
+
 .page-header h1 {
   padding-left: 20px;
   /* color: red; */
@@ -87,23 +88,6 @@ li {
   /* border: 10px solid red; */
 }
 
-.notes-list ul li .notes-main:hover,
-.notes-list ul li .notes-main:focus {
-  box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
-  transform: scale(1.1);
-  position: relative;
-  z-index: 5;
-  transition: all .3s ease-in-out;
-  /* cursor: pointer; */
-}
-
-.notelist-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 0 28px;
-}
 
 .options {
   padding-left: 10px;
@@ -128,4 +112,103 @@ li {
   display: inline-block;
   border-radius: 10px;
   min-width: 110px;
+}
+
+
+.cube {
+
+  ;
+}
+
+/* h1,
+.description {
+  text-align: center;
+} */
+
+
+
+
+#group-name {
+  border: 0;
+  margin: 10px;
+  padding: 10px;
+}
+
+#group-name:focus {
+  outline: none;
+}
+
+.elements {
+  margin-top: 40px;
+  border: 2px solid #eee;
+}
+
+.selecto-area {
+  padding: 20px;
+}
+
+#selecto1 .cube {
+  transition: all ease 0.2s;
+}
+
+.moveable #selecto1 .cube {
+  transition: none;
+}
+
+.selecto-area .selected {
+  background: var(--color);
+}
+
+.scroll {
+  height: 100%;
+  padding-top: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.infinite-viewer,
+.scroll {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.infinite-viewer .viewport {
+  padding-top: 10px;
+}
+
+.empty.elements {
+  border: none;
+}
+
+.notes-list ul li .notes-main:hover,
+.notes-list ul li .notes-main:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+  transform: scale(1.1);
+  position: relative;
+  z-index: 5;
+  transition: all .3s ease-in-out;
+  /* cursor: pointer; */
+}
+
+.notelist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 28px;
+}
+
+
+.selectedNotes {
+  background: #ffc;
+
+}
+
+
+.selected div div {
+  background: #4af !important;
+  color: white !important
 }
