@@ -1,5 +1,5 @@
 import NoteItem from "../NoteItem/NoteItem"
-import { useContext } from 'react';
+import { useContext, useRef } from 'react';
 import AllProjectsContext from '../../store/AllProjectcontext';
 import { useState, useEffect } from "react";
 // import SwipeableTemporaryDrawer from '../Drawer/Drawer';
@@ -13,6 +13,7 @@ import { default as D } from 'react-draggable';
 import PeopleSharpIcon from '@mui/icons-material/PeopleSharp';
 import { Droppable, Draggable, DragDropContext } from "react-beautiful-dnd";
 import { reorderRows } from '../Reorder/Reorder';
+import Selecto from "react-selecto";
 
 function NoteList(props) {
     const allProjectCtx = useContext(AllProjectsContext);
@@ -29,7 +30,16 @@ function NoteList(props) {
     const [grouped, setGrouped] = useState(false);
     // create an object which contains lists of notes grouped by "group"
     const [noteByGroup, setNotebyGroup] = useState([]);
-
+    const [scrollOptions, setScrollOptions] = useState({});
+    const selectoRef = useRef(null);
+    const scrollerRef = useRef(null);
+    useEffect(() => {
+        setScrollOptions({
+            container: scrollerRef.current,
+            throttleTime: 30,
+            threshold: 0,
+        });
+    }, []);
     useEffect(() => {
         //make a list of objects with group as key and list of notes as value
         const noteByGroup = [];
@@ -216,59 +226,91 @@ function NoteList(props) {
                 </DragDropContext>
                 :
                 <div>
-                    <div className="notelist-header">
+                    <Selecto
+                        ref={selectoRef}
+                        dragContainer={".elements"}
+                        selectableTargets={[".selecto-area .tilt_1 .tilt_2"]}
+                        hitRate={20}
+                        selectByClick={true}
+                        selectFromInside={true}
+                        toggleContinueSelect={["shift"]}
+                        ratio={0}
+                        scrollOptions={scrollOptions}
+                        onDragStart={e => {
+                            if (e.inputEvent.target.nodeName === "BUTTON") {
+                                return false;
+                            }
+                            return true;
+                        }}
+                        onSelect={e => {
+                            e.added.forEach(el => {
+                                el.classList.add("selected");
+                            });
+                            e.removed.forEach(el => {
+                                el.classList.remove("selected");
+                            });
+                        }}
+                        onScroll={e => {
+                            scrollerRef.current.scrollBy(e.direction[0] * 10, e.direction[1] * 10);
+                        }}
+                    ></Selecto>
+                    <div className="elements scroll selecto-area" id="selecto1" ref={scrollerRef} onScroll={() => {
+                        selectoRef.current.checkScroll();
+                    }}>
+                        <div className="notelist-header">
 
-                        <h1>Showing All Notes of <b>{project.title}</b></h1>
-                        <Search handleSearchNote={setSearchText} />
-                        <div className="options">
-                            <div className="selector">
-                                <BasicSelect id={id} init={initialsort} />
+                            <h1>Showing All Notes of <b>{project.title}</b></h1>
+                            <Search handleSearchNote={setSearchText} />
+                            <div className="options">
+                                <div className="selector">
+                                    <BasicSelect id={id} init={initialsort} />
+                                </div>
+                                {/* <SwipeableTemporaryDrawer projectKey={props.k} onAdd={AddNote} onEdit={editNote} onDelete={deleteNote} /> */}
+                                <button title="Add New Note" size="large" onClick={() =>
+
+                                    AddNote({
+                                        key: uuid(),
+                                        text: "Text",
+                                        author: "Name",
+                                        date: new Date().toISOString().slice(0, 10),
+                                        group: "Group",
+
+                                        // take a random number from 1 to 3
+                                        color: Math.floor(Math.random() * 3) + 1,
+                                    })}>
+                                    <AddCircleOutlineIcon fontSize='large' />
+                                </button>
+                                <button title="Group Highlights" size="large" onClick={() =>
+
+                                    setGrouped(prev => {
+                                        !prev ?
+                                            alert.success("Grouped!") :
+                                            alert.success("Ungrouped!");
+                                        return !prev;
+                                    })}>
+
+                                    <PeopleSharpIcon fontSize='large' />
+                                </button>
                             </div>
-                            {/* <SwipeableTemporaryDrawer projectKey={props.k} onAdd={AddNote} onEdit={editNote} onDelete={deleteNote} /> */}
-                            <button title="Add New Note" size="large" onClick={() =>
-
-                                AddNote({
-                                    key: uuid(),
-                                    text: "Text",
-                                    author: "Name",
-                                    date: new Date().toISOString().slice(0, 10),
-                                    group: "Group",
-
-                                    // take a random number from 1 to 3
-                                    color: Math.floor(Math.random() * 3) + 1,
-                                })}>
-                                <AddCircleOutlineIcon fontSize='large' />
-                            </button>
-                            <button title="Group Highlights" size="large" onClick={() =>
-
-                                setGrouped(prev => {
-                                    !prev ?
-                                        alert.success("Grouped!") :
-                                        alert.success("Ungrouped!");
-                                    return !prev;
-                                })}>
-
-                                <PeopleSharpIcon fontSize='large' />
-                            </button>
                         </div>
-                    </div>
 
-                    <div className="notes-list">
-                        <ul>
+                        <div className="notes-list">
+                            <ul>
 
-                            {
-                                notes.filter((note) =>
-                                    note.text.includes(searchText) || note.author.includes(searchText) || note.group.includes(searchText) || note.date.includes(searchText)
-                                ).map((note, index) => (
-                                    <D>
-                                        <li className={note.color % 2 === 1 ? "tilt_1" : "tilt_2"} title="Double Click to Edit!">
-                                            <NoteItem onEdit={editNote} onDelete={deleteNote} note={note} />
-                                        </li>
-                                    </D>
-                                ))}
-                        </ul >
-                    </div>
-                </div >
+                                {
+                                    notes.filter((note) =>
+                                        note.text.includes(searchText) || note.author.includes(searchText) || note.group.includes(searchText) || note.date.includes(searchText)
+                                    ).map((note, index) => (
+                                        <D>
+                                            <li className={note.color % 2 === 1 ? "tilt_1" : "tilt_2"} title="Double Click to Edit!">
+                                                <NoteItem onEdit={editNote} onDelete={deleteNote} note={note} />
+                                            </li>
+                                        </D>
+                                    ))}
+                            </ul >
+                        </div>
+                    </div >
+                </div>
             :
             <div>
                 <div className="notelist-header">
